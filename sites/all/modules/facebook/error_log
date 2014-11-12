@@ -1,0 +1,495 @@
+[03-Dec-2013 11:30:46] PHP Warning:  require_once(facebook/src/facebook.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home1/creati16/public_html/stage/facebook/facebook.php on line 4
+[03-Dec-2013 11:30:46] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'facebook/src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home1/creati16/public_html/stage/facebook/facebook.php on line 4
+[03-Dec-2013 11:31:30] PHP Warning:  require_once(src/facebook.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home1/creati16/public_html/stage/facebook/facebook.php on line 4
+[03-Dec-2013 11:31:30] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home1/creati16/public_html/stage/facebook/facebook.php on line 4
+[03-Dec-2013 11:31:56] PHP Fatal error:  Call to a member function getUser() on a non-object in /home1/creati16/public_html/stage/facebook/facebook.php on line 11
+[03-Dec-2013 11:32:26] PHP Fatal error:  Call to a member function api() on a non-object in /home1/creati16/public_html/stage/facebook/facebook.php on line 13
+[03-Dec-2013 11:32:46] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 11:33:25] CSRF state token does not match one provided.
+[03-Dec-2013 11:33:25] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 11:43:59] CSRF state token does not match one provided.
+[03-Dec-2013 11:43:59] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 11:51:08] CSRF state token does not match one provided.
+[03-Dec-2013 11:51:09] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 12:53:27] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 12:54:06] CSRF state token does not match one provided.
+[03-Dec-2013 12:54:06] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 13:05:48] PHP Parse error:  syntax error, unexpected $end in /home1/creati16/public_html/stage/facebook/facebook.php on line 73
+[03-Dec-2013 13:06:16] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQC4gJ1FGdx5dkbjplyEMgiWMxPBcF0J1aRZaWNtxZkvgi3d4ELs06D2jHjpz-4F9xehVq2-9BvVwkOZoDGASKXCTjJvy5Jj2jAzxa3HuwGOokRP90WsTfZUEeGIjALpQDZpe6JiIgqAc7zf4iZmw4feeM1joPP5DTGfZtIChcYw8tHdCQ9aASMw8Nq-YWBjzvtsscQYIJXsRce-LI67pNWSWkPprPwjHuk8klVmyAM1BQADykAXU1BkJcvAUcYWFBPS23L5izV5as_1BkLfL4UxzpLagKTK1rCJNql3H6hcQaefGNBh53NY7khJICDseFI&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:18] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQBD_LQcLRreqqcfR4mUxkVVQb0CJf5TaWrZIAJZIbBzW0Lh7wMmlpoJ83pBh5wqtTHFBW9SzZvMNOqquzmAaNdv4n3mKytIHlIbCIz6yD5EWPrQwtZmXEfYPy8yFICefSWdTC4Bt1GnnzFR7ERjy-XO8SM7HIl3vAbZisU2TJE08aNOdKXTX-sx5O00yq-WPCzkK1LzwBWM_-WrGzFAArQLC_pdOElc_P9cDDE-y8InAAl8FsdZY1bj6x9mCpPuWD8rx2KZ01xC-vQqzsUYD5KXdw5rXckNZlkeuPkuNLFr-KZfWHYwVrQ6QdE2PFALYBg&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:19] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQAA7DbyeW3ZiLX3oK3P83jSSGA7JuthiJGgs9H7qzq2F4o6yi_Nx2i83i8_F7IKQ4eACb-d9iq4qpVByJs5GMYsDDnhZT5PIR6dy-2GUIGcnzvgOOCSlM7sNKbQd50R14E9LqJdXIBGNaHpBRJLSj-r4ZBTmUMD721_Br5rewAuyoIKjbbaF30l_p0mbDI6tvOarPD18DuszsvUVx4LWizToXX26gvqvmZG2goBw_pWRe7gx5C1_FIBBnf2w2em9Pm-Emsgi6FLvvPGkK3s7pIo9Zgh0Bzxx3647uIAHF3MNYlhhy2QeMeFSDa3RHwxKgw&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:20] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQDyQr0G_qKoWpmID1a4fy7eqEOpUXGxIU1lXpxsjNIZb-Aqs2lng99SrbAJQWjL48T0tbEeu902ZR2Lsz74VN4I9q-LXujulyXDk35eONmLylVEsdjj1-yluZLd9QMhP2Ytu5JXZ5MD7EWkRup1OEgAi9vEANKDQlQoidaQj6MGaorEMr75qU9rHGUNKRAAHL-xv3q1I1RRNxZEU1pHVUOycW_Vhxaa6r9PQZSL1jyNtHTtvPkMtTR0ixepl7dsgqXsg7E1nT98ARig1JN_29XD0QZJyhTd66ZtdFw72_UpeoPgGtKN3ghUWABFqNDpsFg&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:21] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQALPQLP6_2GiekgRQXsjge6M-349wApITetDz6K7ALy7yGyiFDOiwevlZ8v4-zg6LOP7dhXpAfbNX37M3yzVVJ2JwzSWGLYRXqYuTKccC9cEkPf-Z1NFMC-tgJON6LDycBPIjShzVRphJ0SOUBnJ6sejrcDa0_jUmB-cDzUqQEs0Rq6WkYZ_T_jqL3phySAz81vFy_tbKhg52YdC3lFr-JXrVXUCibbnnnGDAir6XyMDIjyWWRenAt1LAIeBpq1suTmThIu3CSEWKa6UaKaw1_MgwzRVnwbvDpB_VryV49Euw_RDxupCZs_LiNMAybBCCY&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:23] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQCM4g9q9SSjY815KVvWlmMUT8oFEQDHvuQbeEV3jLFOOJ84BQwSkQyEx4IE44CabJZpqXHw4RsyOQHF9Awb38e9kaqTDOegkX_HK3KvSrS-YJ7ufhUBRrw2ArRfwWH4eHFLRQUr4DF8YgzfcIHbnJ-L96lirplfNfXZP648tuhqXKHhV2e0vHOjeMWheTNtAmww99KjRYrOs9zmPRD2W8Ew7-FWndwO5dS4wUHk5JQtcEG48wRzBmgtzogkjpgrH72o7EhlH19xsnHNN15MZBjgKfNPHmLBH7vDVzIjVIoy38t2uCrkdeSea3MJy_JFdFE&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:24] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQBi6-k8qItJtl86IkXnjP57Pxdz6jdUjv-98PDeXzQAvInpZ3D6EiuPn-_aEPmxo8ah1qZ7IOCAREdDpH4Mjza_cMaOI7KGzZ7Uqh7lYL4nDuV_V50Zq9QhBa62XFAKx4SmmTd_pyNsjfoUuIA6C_yfrn2-bQefctGFHKwUCT8Dnzex70GEnJTEmFtiSinfraLKfnJXb_fG7zNXR34PvYSaOGYv28CrhlLiR435co7vfLc0ThrImh_0xf8ra7MsWz-Ac_ZvKsh-gjuEYpWTDn_LP0iGzewe-URZsJ8avv01bKulg9FM_Euao3dOoqa-DoA&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:25] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQBDq_a8Zu2z-BLwIPEUctiKyVs5sH8P0a0rZeBefJ6Mk4SR4gL5IQfCL558fEtqcdxgBdYXDfdQbgBQfhI_RYEuncMvz_ZmhfqhR8DnhPIeJQLacQXJoVBPw7PsSaHmeZuvUqkeNqsa-6UnYVfEfba_90bxj7CRkdlbK8_gHQCbVwDKorJ1YlVeOq9V-tHUED7wU57LHRV9CWq_uZZa0obq4-B4x_zR-IA_44ZqXrgNi0XBCm99zwvdUeCJ42ws7BIzsZaTdMfOnxUFOijZdjTgultmBsO5thIukGNpFx0RzfqC09YboAeE2WiwkuoStlg&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:27] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQBmFYcSsluBRtnx0dLhvBLSr_1cvs-53ZXUxPqzMugQ4VQesaCCkeTP4gFAsSQhKMnU52T2u38-TXlCPInZ30PkgI-KZSj-JxQrGe6DfCTiYRvArp19SFf9voSUskbtCF8omhcB_E_N60SRIpUJvv4XVI4UuWlx52tidB4OWSFdr7lWJL5OMLdGzZdl5Ryvlpa6NgOQP4LgsuV249D9QBI1uXghjL8L4ivM-86kSJtQC_o-gB5WDWCVohdaiJdS9A8T_rfofwiJQzTn4E5XHifx1pwRmt61JYRjrnd4DZ8QN6O-XW1ZXqhh-jpfRkzFqhk&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:06:28] PHP Warning:  file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=192001120985592&amp;redirect_uri=http%3A%2F%2Fstage.creativefisher.com%2Ffacebook%2Ffacebook.php%3F&amp;client_secret=4228602ff00462962b126b8652103e6d&amp;code=AQDgkeMtLBIrVhO-v261ULIeqm6wkFGHsPSOlzPQ4IJfjdQ-UYpH4cDkDKHeVwq43WMXl_nPfCrgVMVeOD7945Wbk9M9-2tL8UTvZxKkxjWcYWIuBbVBlHfHQJbRFtcx4h01zGhBZL8GmbueWeWfxJxbtMtx7p_d_6yeeP9sK7f0YNVlHlUrIQNfNfa3RBKP555au2vsbwaDvXDXlXlR2EtkdzSkvozyvXpjmqeFfEjmRQCljTYCNd5jiwJ7GK8QmwSZAgWwhMoEcSDXXtrADrUrM2TpkEMSynYZufohXG3ry-axEfvy2NvzijGzmR4Srx4&amp;display=popup) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home1/creati16/public_html/stage/facebook/facebook.php on line 23
+[03-Dec-2013 13:11:36] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home1/creati16/public_html/stage/facebook/facebook.php on line 17
+[03-Dec-2013 13:12:27] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home1/creati16/public_html/stage/facebook/facebook.php:4) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 49
+[03-Dec-2013 13:12:45] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home1/creati16/public_html/stage/facebook/facebook.php:4) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 49
+[03-Dec-2013 13:14:16] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:14:16] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 13:16:28] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:16:28] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 13:18:26] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:18:26] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 13:20:22] PHP Parse error:  syntax error, unexpected $end in /home1/creati16/public_html/stage/facebook/facebook.php on line 47
+[03-Dec-2013 13:20:38] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:20:38] OAuthException
+[03-Dec-2013 13:20:38] An active access token must be used to query information about the current user.
+[03-Dec-2013 13:20:41] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:20:41] OAuthException
+[03-Dec-2013 13:20:41] An active access token must be used to query information about the current user.
+[03-Dec-2013 13:20:44] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:20:44] OAuthException
+[03-Dec-2013 13:20:44] An active access token must be used to query information about the current user.
+[03-Dec-2013 13:21:09] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:21:09] OAuthException
+[03-Dec-2013 13:21:09] An active access token must be used to query information about the current user.
+[03-Dec-2013 13:21:14] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:21:14] OAuthException
+[03-Dec-2013 13:21:14] An active access token must be used to query information about the current user.
+[03-Dec-2013 13:22:39] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 13:22:39] OAuthException
+[03-Dec-2013 13:22:39] An active access token must be used to query information about the current user.
+[03-Dec-2013 14:00:37] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 14:00:37] OAuthException
+[03-Dec-2013 14:00:37] An active access token must be used to query information about the current user.
+[03-Dec-2013 14:00:42] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 14:00:42] OAuthException
+[03-Dec-2013 14:00:42] An active access token must be used to query information about the current user.
+[03-Dec-2013 14:01:16] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 14:01:16] OAuthException
+[03-Dec-2013 14:01:16] An active access token must be used to query information about the current user.
+[03-Dec-2013 14:01:40] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 14:01:40] OAuthException
+[03-Dec-2013 14:01:40] An active access token must be used to query information about the current user.
+[03-Dec-2013 14:01:58] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 14:01:58] OAuthException
+[03-Dec-2013 14:01:58] An active access token must be used to query information about the current user.
+[03-Dec-2013 14:02:20] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 14:02:20] OAuthException
+[03-Dec-2013 14:02:20] An active access token must be used to query information about the current user.
+[03-Dec-2013 14:02:54] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 14:02:54] OAuthException
+[03-Dec-2013 14:02:54] An active access token must be used to query information about the current user.
+[03-Dec-2013 14:05:07] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home1/creati16/public_html/stage/facebook/facebook.php:4) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 49
+[03-Dec-2013 14:05:07] Shared session ID cookie could not be set! You must ensure you create the Facebook instance before headers have been sent. This will cause authentication issues after the first request.
+[03-Dec-2013 14:05:07] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:4) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 158
+[03-Dec-2013 14:05:07] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:4) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 158
+[03-Dec-2013 14:05:07] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:4) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 158
+[03-Dec-2013 14:05:07] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 14:05:07] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:05:32] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:09:21] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:09:35] CSRF state token does not match one provided.
+[03-Dec-2013 14:09:35] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:09:55] CSRF state token does not match one provided.
+[03-Dec-2013 14:09:55] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:10:38] CSRF state token does not match one provided.
+[03-Dec-2013 14:10:38] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:12:04] CSRF state token does not match one provided.
+[03-Dec-2013 14:12:04] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:12:20] CSRF state token does not match one provided.
+[03-Dec-2013 14:12:21] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:19:36] CSRF state token does not match one provided.
+[03-Dec-2013 14:19:37] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:19:44] CSRF state token does not match one provided.
+[03-Dec-2013 14:19:44] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:19:45] CSRF state token does not match one provided.
+[03-Dec-2013 14:19:45] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:20:06] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:20:17] CSRF state token does not match one provided.
+[03-Dec-2013 14:20:18] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:20:42] CSRF state token does not match one provided.
+[03-Dec-2013 14:20:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:13) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 158
+[03-Dec-2013 14:20:43] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:20:57] CSRF state token does not match one provided.
+[03-Dec-2013 14:20:57] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:13) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 158
+[03-Dec-2013 14:20:57] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:21:07] CSRF state token does not match one provided.
+[03-Dec-2013 14:21:07] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:13) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 158
+[03-Dec-2013 14:21:07] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:22:25] CSRF state token does not match one provided.
+[03-Dec-2013 14:22:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:13) in /home1/creati16/public_html/stage/facebook/src/src/facebook.php on line 158
+[03-Dec-2013 14:22:25] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:22:52] CSRF state token does not match one provided.
+[03-Dec-2013 14:22:53] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:24:25] CSRF state token does not match one provided.
+[03-Dec-2013 14:24:26] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:24:40] CSRF state token does not match one provided.
+[03-Dec-2013 14:24:41] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:25:28] CSRF state token does not match one provided.
+[03-Dec-2013 14:25:28] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 14:25:49] PHP Catchable fatal error:  Object of class Facebook could not be converted to string in /home1/creati16/public_html/stage/facebook/facebook.php on line 9
+[03-Dec-2013 15:11:03] PHP Parse error:  syntax error, unexpected '=', expecting ']' in /home1/creati16/public_html/stage/facebook/facebook.php on line 17
+[03-Dec-2013 15:11:15] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home1/creati16/public_html/stage/facebook/facebook.php on line 19
+[03-Dec-2013 15:11:17] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home1/creati16/public_html/stage/facebook/facebook.php on line 19
+[03-Dec-2013 15:39:13] CSRF state token does not match one provided.
+[03-Dec-2013 15:39:13] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 15:39:42] CSRF state token does not match one provided.
+[03-Dec-2013 15:39:42] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 15:49:13] CSRF state token does not match one provided.
+[03-Dec-2013 15:49:13] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 15:50:31] CSRF state token does not match one provided.
+[03-Dec-2013 15:50:31] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 15:52:31] CSRF state token does not match one provided.
+[03-Dec-2013 15:52:32] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 15:56:28] CSRF state token does not match one provided.
+[03-Dec-2013 15:56:28] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 15:56:54] CSRF state token does not match one provided.
+[03-Dec-2013 15:56:54] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 16:12:40] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 32
+[03-Dec-2013 16:40:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 16:41:15] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 16:41:15] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 16:41:26] There exists a cookie that we wanted to clear that we couldn't clear because headers was already sent. Make sure to do the first API call before outputing anything.
+[03-Dec-2013 16:41:26] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 16:42:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:44:29] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:44:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:44:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:45:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:45:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:45:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:47:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:51:22] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 16:59:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 17:00:10] CSRF state token does not match one provided.
+[03-Dec-2013 17:00:10] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:02:00] CSRF state token does not match one provided.
+[03-Dec-2013 17:02:00] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:03:40] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:13) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 17:04:34] CSRF state token does not match one provided.
+[03-Dec-2013 17:04:36] CSRF state token does not match one provided.
+[03-Dec-2013 17:04:36] CSRF state token does not match one provided.
+[03-Dec-2013 17:04:37] CSRF state token does not match one provided.
+[03-Dec-2013 17:04:37] CSRF state token does not match one provided.
+[03-Dec-2013 17:04:47] CSRF state token does not match one provided.
+[03-Dec-2013 17:05:57] CSRF state token does not match one provided.
+[03-Dec-2013 17:10:37] CSRF state token does not match one provided.
+[03-Dec-2013 17:10:37] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:12:01] CSRF state token does not match one provided.
+[03-Dec-2013 17:12:01] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:12:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:13) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 17:30:24] CSRF state token does not match one provided.
+[03-Dec-2013 17:30:25] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:31:56] CSRF state token does not match one provided.
+[03-Dec-2013 17:31:56] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:31:58] CSRF state token does not match one provided.
+[03-Dec-2013 17:31:59] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:32:00] CSRF state token does not match one provided.
+[03-Dec-2013 17:32:01] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:32:07] CSRF state token does not match one provided.
+[03-Dec-2013 17:32:07] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:32:11] CSRF state token does not match one provided.
+[03-Dec-2013 17:32:11] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:32:25] CSRF state token does not match one provided.
+[03-Dec-2013 17:32:25] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[03-Dec-2013 17:34:51] CSRF state token does not match one provided.
+[03-Dec-2013 17:35:53] CSRF state token does not match one provided.
+[03-Dec-2013 17:35:55] CSRF state token does not match one provided.
+[03-Dec-2013 17:35:57] CSRF state token does not match one provided.
+[03-Dec-2013 17:36:07] CSRF state token does not match one provided.
+[03-Dec-2013 17:40:50] CSRF state token does not match one provided.
+[03-Dec-2013 17:42:10] CSRF state token does not match one provided.
+[03-Dec-2013 17:42:42] CSRF state token does not match one provided.
+[03-Dec-2013 17:42:57] CSRF state token does not match one provided.
+[03-Dec-2013 17:43:20] CSRF state token does not match one provided.
+[03-Dec-2013 17:43:51] CSRF state token does not match one provided.
+[03-Dec-2013 17:47:38] CSRF state token does not match one provided.
+[03-Dec-2013 17:48:18] CSRF state token does not match one provided.
+[03-Dec-2013 17:48:22] CSRF state token does not match one provided.
+[03-Dec-2013 17:50:01] CSRF state token does not match one provided.
+[03-Dec-2013 17:51:01] CSRF state token does not match one provided.
+[03-Dec-2013 17:51:29] CSRF state token does not match one provided.
+[03-Dec-2013 17:52:17] CSRF state token does not match one provided.
+[03-Dec-2013 17:52:36] CSRF state token does not match one provided.
+[03-Dec-2013 17:55:40] CSRF state token does not match one provided.
+[03-Dec-2013 17:58:27] CSRF state token does not match one provided.
+[03-Dec-2013 17:58:43] CSRF state token does not match one provided.
+[03-Dec-2013 17:58:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 33
+[03-Dec-2013 17:58:55] CSRF state token does not match one provided.
+[03-Dec-2013 18:01:19] CSRF state token does not match one provided.
+[03-Dec-2013 18:01:53] PHP Catchable fatal error:  Object of class Facebook could not be converted to string in /home1/creati16/public_html/stage/facebook/facebook.php on line 7
+[03-Dec-2013 18:02:55] CSRF state token does not match one provided.
+[03-Dec-2013 18:04:13] CSRF state token does not match one provided.
+[03-Dec-2013 18:08:39] PHP Parse error:  syntax error, unexpected '<' in /home1/creati16/public_html/stage/facebook/facebook.php on line 43
+[03-Dec-2013 18:08:59] CSRF state token does not match one provided.
+[03-Dec-2013 18:09:00] PHP Fatal error:  Call to a member function getLoginUrl() on a non-object in /home1/creati16/public_html/stage/facebook/facebook.php on line 42
+[03-Dec-2013 18:09:14] CSRF state token does not match one provided.
+[03-Dec-2013 18:09:17] CSRF state token does not match one provided.
+[03-Dec-2013 18:14:38] CSRF state token does not match one provided.
+[03-Dec-2013 18:18:52] CSRF state token does not match one provided.
+[03-Dec-2013 18:18:52] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 18:19:49] CSRF state token does not match one provided.
+[03-Dec-2013 18:19:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 18:20:11] CSRF state token does not match one provided.
+[03-Dec-2013 18:20:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 18:20:15] CSRF state token does not match one provided.
+[03-Dec-2013 18:20:16] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 18:20:43] CSRF state token does not match one provided.
+[03-Dec-2013 18:20:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 35
+[03-Dec-2013 18:22:16] CSRF state token does not match one provided.
+[03-Dec-2013 18:22:23] CSRF state token does not match one provided.
+[03-Dec-2013 18:22:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:23:20] CSRF state token does not match one provided.
+[03-Dec-2013 18:23:21] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:23:24] CSRF state token does not match one provided.
+[03-Dec-2013 18:23:24] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:23:26] CSRF state token does not match one provided.
+[03-Dec-2013 18:23:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:23:27] CSRF state token does not match one provided.
+[03-Dec-2013 18:23:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:00] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:04] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:13] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:16] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:16] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:18] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:18] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:20] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:21] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:22] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:22] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:25] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:26] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:35] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:24:36] CSRF state token does not match one provided.
+[03-Dec-2013 18:24:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:12) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[03-Dec-2013 18:27:11] CSRF state token does not match one provided.
+[03-Dec-2013 18:28:27] CSRF state token does not match one provided.
+[03-Dec-2013 18:28:53] CSRF state token does not match one provided.
+[03-Dec-2013 18:31:57] CSRF state token does not match one provided.
+[03-Dec-2013 18:32:02] CSRF state token does not match one provided.
+[04-Dec-2013 10:45:31] CSRF state token does not match one provided.
+[04-Dec-2013 10:45:32] CSRF state token does not match one provided.
+[04-Dec-2013 10:45:35] CSRF state token does not match one provided.
+[04-Dec-2013 11:25:59] CSRF state token does not match one provided.
+[04-Dec-2013 11:40:26] CSRF state token does not match one provided.
+[04-Dec-2013 11:45:22] CSRF state token does not match one provided.
+[04-Dec-2013 11:55:21] CSRF state token does not match one provided.
+[04-Dec-2013 14:32:23] CSRF state token does not match one provided.
+[04-Dec-2013 15:32:24] PHP Warning:  require_once(facebook/src/facebook.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home1/creati16/public_html/stage/facebook/facebook_post.php on line 3
+[04-Dec-2013 15:32:24] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'facebook/src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home1/creati16/public_html/stage/facebook/facebook_post.php on line 3
+[04-Dec-2013 15:38:30] CSRF state token does not match one provided.
+[04-Dec-2013 15:38:37] CSRF state token does not match one provided.
+[04-Dec-2013 16:27:43] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 16:27:45] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 16:46:22] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 16:55:14] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 16:56:04] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 16:56:41] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:02:20] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:09:39] PHP Fatal error:  Uncaught OAuthException: Unknown path components: /account
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:10:03] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:18:07] CSRF state token does not match one provided.
+[04-Dec-2013 17:18:29] CSRF state token does not match one provided.
+[04-Dec-2013 17:19:00] CSRF state token does not match one provided.
+[04-Dec-2013 17:19:02] CSRF state token does not match one provided.
+[04-Dec-2013 17:44:27] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:47:46] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:47:49] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:48:13] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:48:49] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:48:52] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:51:00] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:51:23] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 17:52:03] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 18:11:06] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 18:12:46] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 18:15:43] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 18:16:54] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 18:17:16] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:13:41] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:14:49] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:41:10] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:52:13] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:52:40] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:53:44] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:53:44] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:53:46] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:53:47] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:53:47] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:55:07] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[04-Dec-2013 23:55:30] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[05-Dec-2013 00:19:30] PHP Fatal error:  Call to a member function getExtendedAccessToken() on a non-object in /home1/creati16/public_html/stage/facebook/post_job.php on line 9
+[05-Dec-2013 00:21:00] PHP Fatal error:  Call to undefined method Facebook::getExtendedAccessToken() in /home1/creati16/public_html/stage/facebook/post_job.php on line 9
+[05-Dec-2013 01:01:31] PHP Fatal error:  Call to a member function api() on a non-object in /home1/creati16/public_html/stage/facebook/post_job.php on line 9
+[05-Dec-2013 01:02:33] PHP Parse error:  syntax error, unexpected '=', expecting ',' or ';' in /home1/creati16/public_html/stage/facebook/post_job.php on line 9
+[05-Dec-2013 01:50:04] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[05-Dec-2013 01:53:27] PHP Fatal error:  Uncaught OAuthException: Invalid OAuth access token signature.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[05-Dec-2013 01:54:50] PHP Fatal error:  Uncaught OAuthException: Invalid OAuth access token signature.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[05-Dec-2013 01:55:09] PHP Fatal error:  Uncaught OAuthException: Invalid OAuth access token signature.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[05-Dec-2013 01:57:21] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home1/creati16/public_html/stage/facebook/post_job.php on line 15
+[05-Dec-2013 01:57:36] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[05-Dec-2013 03:14:34] CSRF state token does not match one provided.
+[05-Dec-2013 03:14:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[05-Dec-2013 03:16:38] CSRF state token does not match one provided.
+[05-Dec-2013 03:17:58] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home1/creati16/public_html/stage/facebook/facebook.php on line 41
+[05-Dec-2013 03:18:19] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home1/creati16/public_html/stage/facebook/facebook.php on line 41
+[05-Dec-2013 03:18:45] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home1/creati16/public_html/stage/facebook/facebook.php on line 41
+[05-Dec-2013 03:19:41] CSRF state token does not match one provided.
+[05-Dec-2013 03:20:02] CSRF state token does not match one provided.
+[05-Dec-2013 03:20:07] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[05-Dec-2013 03:21:54] PHP Fatal error:  Uncaught OAuthException: A user access token is required to request this resource.
+  thrown in /home1/creati16/public_html/stage/facebook/src/src/base_facebook.php on line 1297
+[05-Dec-2013 03:34:40] PHP Fatal error:  Call to a member function getExtendedAccessToken() on a non-object in /home1/creati16/public_html/stage/facebook/post_job.php on line 28
+[05-Dec-2013 03:52:02] CSRF state token does not match one provided.
+[05-Dec-2013 03:52:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:9) in /home1/creati16/public_html/stage/facebook/facebook.php on line 34
+[05-Dec-2013 03:52:32] CSRF state token does not match one provided.
+[05-Dec-2013 06:14:56] CSRF state token does not match one provided.
+[05-Dec-2013 06:17:39] CSRF state token does not match one provided.
+[06-Dec-2013 00:00:46] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/apply_job.php:8) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 30
+[06-Dec-2013 00:02:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/apply_job.php:8) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 30
+[06-Dec-2013 00:04:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/apply_job.php:8) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 33
+[06-Dec-2013 00:07:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/apply_job.php:10) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 32
+[06-Dec-2013 00:08:06] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/apply_job.php:10) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 33
+[06-Dec-2013 00:16:07] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/apply_job.php:10) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 33
+[06-Dec-2013 00:21:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/apply_job.php:10) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 37
+[06-Dec-2013 00:21:33] CSRF state token does not match one provided.
+[06-Dec-2013 00:21:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'creati16'@'localhost' (using password: NO) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 15
+[06-Dec-2013 00:21:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/creati16/public_html/stage/facebook/apply_job.php on line 15
+[06-Dec-2013 00:21:36] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/creati16/public_html/stage/facebook/apply_job.php on line 16
+[06-Dec-2013 00:21:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/apply_job.php:15) in /home1/creati16/public_html/stage/facebook/apply_job.php on line 28
+[06-Dec-2013 00:22:15] CSRF state token does not match one provided.
+[06-Dec-2013 00:23:12] CSRF state token does not match one provided.
+[06-Dec-2013 00:23:19] CSRF state token does not match one provided.
+[06-Dec-2013 00:30:13] CSRF state token does not match one provided.
+[06-Dec-2013 01:01:22] CSRF state token does not match one provided.
+[06-Dec-2013 01:01:34] CSRF state token does not match one provided.
+[06-Dec-2013 01:01:47] CSRF state token does not match one provided.
+[06-Dec-2013 01:02:21] CSRF state token does not match one provided.
+[06-Dec-2013 01:06:08] CSRF state token does not match one provided.
+[06-Dec-2013 01:06:14] CSRF state token does not match one provided.
+[06-Dec-2013 01:06:44] CSRF state token does not match one provided.
+[06-Dec-2013 01:07:06] CSRF state token does not match one provided.
+[06-Dec-2013 01:07:08] CSRF state token does not match one provided.
+[06-Dec-2013 01:07:09] CSRF state token does not match one provided.
+[06-Dec-2013 01:07:55] CSRF state token does not match one provided.
+[06-Dec-2013 01:17:45] CSRF state token does not match one provided.
+[06-Dec-2013 01:30:03] CSRF state token does not match one provided.
+[06-Dec-2013 01:33:24] CSRF state token does not match one provided.
+[06-Dec-2013 01:34:58] CSRF state token does not match one provided.
+[06-Dec-2013 01:36:18] CSRF state token does not match one provided.
+[06-Dec-2013 01:36:18] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/creati16/public_html/stage/facebook/facebook.php:10) in /home1/creati16/public_html/stage/facebook/facebook.php on line 44
+[06-Dec-2013 01:36:32] CSRF state token does not match one provided.
+[06-Dec-2013 01:38:50] CSRF state token does not match one provided.
+[06-Dec-2013 01:39:00] CSRF state token does not match one provided.
+[06-Dec-2013 01:41:49] CSRF state token does not match one provided.
+[06-Dec-2013 01:45:43] CSRF state token does not match one provided.
+[06-Dec-2013 01:46:01] CSRF state token does not match one provided.
+[06-Dec-2013 01:46:40] CSRF state token does not match one provided.
+[06-Dec-2013 01:49:57] CSRF state token does not match one provided.
+[06-Dec-2013 01:51:11] CSRF state token does not match one provided.
+[06-Dec-2013 01:54:39] CSRF state token does not match one provided.
+[06-Dec-2013 01:58:53] CSRF state token does not match one provided.
+[06-Dec-2013 03:14:07] CSRF state token does not match one provided.
+[06-Dec-2013 04:06:33] CSRF state token does not match one provided.

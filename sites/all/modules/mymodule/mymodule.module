@@ -1,0 +1,617 @@
+﻿<?php
+
+function mymodule_menu() {
+
+    $items['persons/%'] = array(
+        'page callback' => '_get_persons',
+        'access callback' => true,
+        'type' => MENU_NORMAL_ITEM,
+        'page arguments' => array(1),
+    );
+
+    /* $items['student-result'] = array(
+        'page callback' => '_get_student_result',
+        'access callback' => true,
+        'type' => MENU_NORMAL_ITEM,
+    ); */
+
+    /* $items['aheval-account-docs'] = array(
+        'page callback' => '_get_aheval',
+        'access callback' => true,
+        'type' => MENU_NORMAL_ITEM,
+    ); */
+	
+	$items['general-register']=array(
+		'page callback' => '_get_gr',
+		'access callback' => true,
+		'type' => MENU_NORMAL_ITEM,
+	);
+
+  return $items;
+}
+
+/****
+* Implements hook_block_info()
+*/
+
+function mymodule_block_info() {
+    $block=array();
+    $block['home_banner']=array(
+        "info" => t('Show banner in home page'),
+        'cache' => DRUPAL_CACHE_GLOBAL ,
+    );
+
+    $block['news_title']=array(
+        'info' => t('Show title of top of the page'),
+        'cache' => DRUPAL_CACHE_GLOBAL ,
+    );
+
+    $block['daily_darshan']=array(
+        'info'=>'daily darshan',
+        'cache' => DRUPAL_CACHE_GLOBAL ,
+    );
+
+    $block['page_trusty']=array(
+        'info'=>'Currant trusty listing on page',
+        'cache' => DRUPAL_CACHE_GLOBAL ,
+    );
+
+    $block['advertisement']=array(
+        'info'=>'Show ads on sidebar',
+        'cache' => DRUPAL_CACHE_GLOBAL ,
+    );
+
+    $block['latest_post']=array(
+        'info'=>'Show latest News / Event',
+        'cache' => DRUPAL_CACHE_GLOBAL ,
+    );
+	
+	$block['home_aboutus']=array(
+        'info'=>'About us in home page',
+        'cache' => DRUPAL_CACHE_GLOBAL ,
+    );
+
+    return $block;
+}
+
+/****
+* Implements hook_block_view()
+*/
+function mymodule_block_view($delta='') {
+    $block=array();
+    if($delta=='home_banner') {
+        //print_r($nodes['nodes']);die;
+        $block['subject'] = t('');
+        $block['content'] = _latest_home_banner();
+    }
+    else if($delta=='daily_darshan') {
+        $block['subject']=t('Daily Darshan Bhuj');
+        $block['content']= _get_daily_darshan();
+    }
+    else if($delta=='page_trusty') {
+        $block['subject']=t('Currant List of trusties');
+        $block['content']= _get_trusties();
+    }
+    else if($delta=='advertisement') {
+        $block['subject']=t('Advertisement with us');
+        $block['content']= _advertisement();
+    }
+    else if($delta=='latest_post') {
+        $block['subject']=t('Latest News & Events');
+        $block['content']= latest_posts_title('block');
+    }
+	else if($delta=='home_aboutus') {
+        $block['subject']=t('');
+        $block['content']= _home_about();
+    }
+    return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mymodule_theme() {
+    return array(
+        'home_banner' => array(
+          'template' => 'templates/home_banner',
+        ),
+        'daily_darshan' => array(
+          'template' => 'templates/daily_darshan',
+        ),
+        'page_trusty' => array(
+          'template' => 'templates/page_trusty',
+        ),
+        'advertisement' => array(
+          'template' => 'templates/advertisement',
+        ),
+        'student_result' => array(
+            'template' => 'templates/student_result',
+        ),
+        '404' => array(
+            'template' => 'templates/404',
+        ),
+		'gr_search' => array(
+            'template' => 'templates/gr_search',
+        ),
+		'home_about' => array(
+            'template' => 'templates/home_about',
+        ),
+    );
+}
+
+/*
+ * Return person node with tag trustee
+ * */
+function _get_persons($id) {
+	$node_id = array();
+    $title=get_person_title($id);
+    if($title != '0') {
+        $view_array=views_get_view_result('staff', 'page', $id);
+        foreach($view_array as $view) {
+            $node_id[]=$view->nid;
+        }
+        $title=get_person_title($id);
+        $nodes= node_load_multiple($node_id);
+        $output = theme('page_trusty',array(
+            'nodes' => $nodes,
+            'title'=> $title,
+        ));
+    }
+    else {
+        $output = theme('404');
+    }
+    return $output;
+}
+
+/*
+ * Return title for specific person page
+ *
+ * */
+function get_person_title($id) {
+
+    switch($id) {
+        case 56:
+            return "ટ્રસ્ટી મંડળ";
+        case 53:
+            return "પ્રાથમિક શાળા સ્ટાફ";
+        case 52:
+            return "સરસ્વતી વિધાલય સ્ટાફ";
+        case 54:
+            return "ઉચ્ચતર મધ્યામિક શાળા સ્ટાફ";
+        case 55:
+            return "વાણી વિનાયક કોલેજ સ્ટાફ";
+        case 57:
+            return "સરકારી શાળા સ્ટાફ";
+		case 58:
+            return "અધિકારી મંડળ";
+		case 59:
+            return "કારોબારી સભ્યો";
+		case 60:
+            return "શ્રી લેવા પાટીદાર બોર્ડિંગ";
+		case 63:
+            return "શ્રી લેવા પાટીદાર બોડિંગ, મુંબઇ સ્ટાફ";
+        default:
+            return 0;
+    }
+
+}
+
+/*
+ * Return student result node array
+ * */
+function _get_student_result() {
+    $nodes= node_load_multiple(array(),array('type' => 'student_result'));
+    $output = theme('student_result',array(
+            'nodes' => $nodes,
+        ));
+    return $output;
+}
+/*
+ * Return student result node array
+ * */
+function _get_aheval() {
+    $nodes= node_load_multiple(array(),array('type' => 'document_file'));
+    $output = theme('student_result',array(
+            'nodes' => $nodes,
+        ));
+    return $output;
+}
+
+/*
+* function return latest banner
+*/
+function _latest_home_banner(){
+
+    $query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'node')
+        ->propertyCondition('status', 1)
+        ->propertyCondition('type', array('home_banner'))
+        ->propertyOrderBy('created', 'DESC')
+        ->range(0, 5);
+
+    $result = $query->execute();
+    $nids = array_keys($result['node']);
+	
+	if(count($nids) < 1) {
+		return "";
+	}
+
+    $nodes= node_load_multiple($nids);
+    $output = theme('home_banner',array(
+        'nodes' => $nodes,
+    ));
+    return $output;
+}
+
+/*
+* get latest post
+ *  $type:
+ *      1. title
+ *      2. block
+ */
+function latest_posts_title($type='title') {
+
+    $query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'node')
+        ->propertyCondition('status', 1)
+        ->propertyCondition('type', array('activity','document_file',''))
+        ->propertyOrderBy('created', 'DESC')
+        ->range(0, 5);
+
+    $result = $query->execute();
+
+    $nids = array_keys($result['node']);
+
+	if(count($nids) < 1) {
+		return "";
+	}
+	
+    $nodes= node_load_multiple($nids);
+    if($type=='title') {
+        $html='';
+        foreach($nodes as $row) {
+            $html.='<li class="news-item"><a href="'.base_path().'node/'.$row->nid.'">'.$row->title.'</a></li>';
+        }
+    }
+    else {
+        $i=1;
+		$scrollamount="'scrollamount'";
+		$html='<marquee direction="down" onmouseover="this.setAttribute('.$scrollamount.', 0, 0);" onmouseout="this.setAttribute('.$scrollamount.', 6, 0);">';
+        $html.='<ol class="custom-ordered-list">';
+        foreach($nodes as $row) {
+            $html.='<li><span class="number-style">'.$i.'</span>';
+            $html.='<span class="text"><a href="'.base_path().'node/'.$row->nid.'">'.$row->title.'</a></span></li>';
+            $i++;
+        }
+        $html.='</ol>';
+		$html.='</marquee>';
+    }
+    return $html;
+}
+
+/*
+* generate dropdown with three level html menu
+*/
+function generate_menu($menus,$parent=0,$level=0) {
+    global $base_url;
+    $i=0;
+    $html="";
+    $l1='dropdown first-level';
+    $l2='dropdown second-level';
+    $l3='dropdown third-level';
+    if($level > 0){
+        $lv='l'.$level;
+        $html.='<div class="'.$$lv.'">';
+    }
+    foreach($menus as $key=>$menu)
+    {
+        if($menu->plid==$parent) {
+            if($i==0){
+                $attr='';
+                if($menu->plid==0){
+                    $attr='class="l_tinynav1 hidden-phone"';
+                }
+                $html.="<ul $attr>";
+                $i++;
+            }
+            $html.='<li><div class="inner">';
+            if($menu->alias == '') {
+                $alis=$menu->link_path;
+            }
+            else {
+                $alis=$menu->alias;
+            }
+
+            if($alis=='<front>') {
+                $alis='';
+            }
+
+            $html.='<a href="'.$base_url.'/'.$alis.'">'.$menu->link_title.'</a>';
+            unset($menus[$key]);
+            $add_level=$level+1;
+            $html.=generate_menu($menus,$menu->mlid,$add_level);
+            $html.="</div></li>";
+        }
+    }
+    if($i!=0){
+        $html.="</ul>";
+    }
+    if($level > 0){
+        $html.='</div>';
+    }
+    return $html;
+}
+
+/*
+*   return daily darshan photo slider html
+*/
+function _get_daily_darshan() {
+    $sql=' SELECT * FROM {daily_darshan} order by img_order limit 0,2';
+    $rs=db_query($sql);
+    $res=$rs->fetchAll();
+    //print_r($res);die;
+    $output = theme('daily_darshan',array(
+        'images' => $res,
+    ));
+
+    return $output;
+}
+
+/*
+* function return latest ads banner
+*/
+function _advertisement() {
+   $query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'node')
+        ->propertyCondition('status', 1)
+        ->propertyCondition('type', array('advertisement'))
+        ->fieldCondition('field_till_date','value', date('Y-m-d'),'>')
+        ->fieldOrderBy('field_till_date','value','DESC');
+
+    $result = $query->execute();
+	$output="";
+	if(isset($result['node'])) {
+		$nids = array_keys($result['node']);
+
+		$nodes= node_load_multiple($nids);
+
+		$output = theme('advertisement',array(
+			'nodes' => $nodes,
+		));
+	}
+    return $output;
+}
+
+/*
+*
+*/
+
+function _get_gr() {
+
+  // Initialising output
+  $output = theme('gr_search',array(
+        'nodes' => array(),
+    ));
+ 
+  // Table header
+  $header = array(
+    array('data' => 'GR No.', 'field' => 'gr_no'),
+    array('data' => 'Full Name', 'field' => 'name'),
+    array('data' => 'Village', 'field' => 'village'),
+    array('data' => 'Entry Year', 'field' => 'entry_year'),
+    array('data' => 'Entry Std.', 'field' => 'entry_std'),
+  );
+ 
+  // Setting the sort conditions
+  if(isset($_GET['sort']) && isset($_GET['order'])) {
+    // Sort it Ascending or Descending?
+    if($_GET['sort'] == 'asc')
+      $sort = 'ASC';
+    else
+      $sort = 'DESC';
+ 
+    // Which column will be sorted
+	switch($_GET['order']) {
+		case 'GR No.':
+			$order = 'gr_no';
+			break;
+		case 'Full Name':
+			$order = 'name';
+			break;
+		case 'Village':
+			$order = 'village';
+			break;
+		case 'Entry Year':
+			$order = 'entry_year';
+			break;
+		case 'Entry Std.':
+			$order = 'entry_std';
+			break;
+		default:
+			$order = 'title';
+    }
+  }
+  else {
+    $sort = 'DESC';
+    $order = 'gr_no';
+  }
+ 
+  // Query object
+  $query = db_select("general_register","n");
+   
+  // Adding fields
+  $query->fields('n',array('gr_no','name','village','entry_year','entry_std'));
+ 
+  // Set order by
+  $query->orderBy($order, $sort);
+ 
+	/* set where condition */
+	if(isset($_GET['name'])) {
+		$query->condition('name','%'.$_GET['name'].'%','LIKE');
+	}
+	
+	if(isset($_GET['village'])) {
+		$query->condition('village','%'.$_GET['village'].'%','like');
+	}
+	
+	if(isset($_GET['year']) && is_numeric($_GET['year'])) {
+		$year=$_GET['year']."-01-01";
+		$year_less=($_GET['year']+1)."-01-01";
+		
+		$query->condition('entry_year',$year,'>=');
+		$query->condition('entry_year',$year_less,'<');
+	}
+ 
+  // Pagination
+  $query = $query
+		->extend('TableSort')
+		->extend('PagerDefault')
+		->limit(50);
+ 
+  // Executing query
+  $result = $query->execute();
+   
+  // Looping for filling the table rows
+  while($data = $result->fetchObject()) {
+    // Adding the rows
+    $rows[] = array(
+			$data->gr_no,
+			ucfirst($data->name),
+			ucfirst($data->village),
+			date('d/m/Y',strtotime($data->entry_year)),
+			$data->entry_std,
+		);
+  }
+ 
+  // Setting the output of the field
+  $output.= theme_table(
+    array(
+      'header' => $header,
+      'rows' => $rows,
+      'attributes' => array(),
+      'sticky' => true,
+      'caption' => '',
+      'colgroups' => array(),
+	  /* The message to be displayed if table is empty */
+      'empty' => t("Your search does not match any result!") 
+    )
+  ).theme('pager');
+ 
+  // Returning the output
+  return $output;
+}
+
+
+function mymodule_node_submit($node, $form, &$form_state) {
+/* 	dsm($node);
+	dsm($form);
+	dsm($form_state); */
+  if ($node->type == 'article') {
+    // Act on the unpublishing of an article.
+    if ($node->original->status == 1 && $node->status == 0) {
+      // Do something here.
+    }
+    // Act on the publishing of an article.
+    if ($node->original->status == 0 && $node->status == 1) {
+		//dsm();
+    }
+  }
+}
+
+
+/*
+* create select box from array
+*/
+
+/**
+ * Drop-down Menu
+ *
+ * @access	public
+ * @param	string
+ * @param	array
+ * @param	string
+ * @param	string
+ * @return	string
+ */
+if ( ! function_exists('form_dropdown'))
+{
+	function form_dropdown($name = '', $options = array(), $selected = array(), $extra = '')
+	{
+		if ( ! is_array($selected))
+		{
+			$selected = array($selected);
+		}
+
+		// If no selected state was submitted we will attempt to set it automatically
+		if (count($selected) === 0)
+		{
+			// If the form name appears in the $_POST array we have a winner!
+			if (isset($_POST[$name]))
+			{
+				$selected = array($_POST[$name]);
+			}
+		}
+
+		if ($extra != '') $extra = ' '.$extra;
+
+		$multiple = (count($selected) > 1 && strpos($extra, 'multiple') === FALSE) ? ' multiple="multiple"' : '';
+
+		$form = '<select name="'.$name.'"'.$extra.$multiple.">\n";
+
+		foreach ($options as $key => $val)
+		{
+			$key = (string) $key;
+
+			if (is_array($val) && ! empty($val))
+			{
+				$form .= '<optgroup label="'.$key.'">'."\n";
+
+				foreach ($val as $optgroup_key => $optgroup_val)
+				{
+					$sel = (in_array($optgroup_key, $selected)) ? ' selected="selected"' : '';
+
+					$form .= '<option value="'.$optgroup_key.'"'.$sel.'>'.(string) $optgroup_val."</option>\n";
+				}
+
+				$form .= '</optgroup>'."\n";
+			}
+			else
+			{
+				$sel = (in_array($key, $selected)) ? ' selected="selected"' : '';
+
+				$form .= '<option value="'.$key.'"'.$sel.'>'.(string) $val."</option>\n";
+			}
+		}
+
+		$form .= '</select>';
+
+		return $form;
+	}
+}
+
+function _home_about() {
+	
+	$query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'node')
+        ->propertyCondition('status', 1)
+        ->propertyCondition('type', array('page_gallery'))
+        ->propertyOrderBy('created', 'DESC')
+        ->range(0, 10);
+
+    $result = $query->execute();
+    $nids = array_keys($result['node']);
+	
+	if(count($nids) < 1) {
+		return "";
+	}
+
+    $nodes= node_load_multiple($nids);
+    $output = theme('home_about',array(
+        'nodes' => $nodes,
+    ));
+    return $output;
+}
+
+function mymodule_mail_alter(&$message) {
+  $message['from'] = $message['headers']['From'] = '"No-reply" <noreply@slpb.org>';
+}

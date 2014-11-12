@@ -1,0 +1,3 @@
+name = mymodule
+description = module for my site
+core = 7.x
